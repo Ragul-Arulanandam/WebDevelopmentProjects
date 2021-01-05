@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewreport" content="width=device-width initial-scale=1, shrink-to-fit=no">
+        <title>Calculator App</title>
+        <link rel="shortcut icon" type="images/png" href="static/calci.png">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./homepage.css">
+
+    </head>
+<body>
+       <style>
+       *{margin: 0;}
+        .bg {
+            height: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px;
+            color: black;
+        }
+
+        #content {
+            font-family: "Aerial";
+            text-align: left;
+            padding: 10px;
+            border-width: 5px;
+            font-weight: Bold;
+            color: black;
+        }
+        .navbar{
+            padding:20px;
+            opacity: 0.9;
+            width: 100%;
+            position: fixed;
+            }
+        .center{
+            position: relative;
+
+        }
+       </style>
+            <nav class="navbar navbar-dark bg-primary" style="background-color: #0080ff;">
+            <center id="center">
+            <img src="static/logo.png" width="33" height="36"  alt="">
+            <span class="navbar-brand" href="#" style="color: #ffffff; padding: 7px; font-size:40px;  font-family: Arial, Helvetica, sans-serif" >Calculator Web App</span>
+            </center>
+            </nav>
+
+
+
+    <div class="bg">
+        <img src="static/bg.png" alt="Nature" class="responsive" style="width:100%;">
+        <div class="container">
+        <form method="POST">
+            <form action="/action_page.php" >
+            <label><b>Choose a Method:</b></label>
+                <select name="comp-select" >
+                    <option value="Addition">Addition</option>
+                    <option value="Subtraction">Subtraction</option>
+                    <option value="Multiplication">Multiplication</option>
+                    <option value="Division">Division</option>
+                </select>
+                <br><br>
+                <div id="content">
+                    {{ form.input1.label() }}
+                    {{ form.input1() }}
+                    <br><br>
+                    {{ form.input2.label() }}
+                    {{ form.input2() }}
+                    <br><br>
+                    {{ form.Results() }}
+                    <br><br>
+                    <div >
+                        <h1><b>RESULTS:  {{final1}} </b></h1>
+                        </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

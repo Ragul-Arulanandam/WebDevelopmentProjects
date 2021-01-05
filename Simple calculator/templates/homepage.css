@@ -1,0 +1,31 @@
+        .navbar {
+            font-size: 25px;
+            font-family: "Courier New", Courier, monospace;
+            text-align: center;
+            position: relative;
+        }
+        
+        .bg {
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+        }
+        
+        .container {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px;
+            color: black;
+        }
+        
+        #content {
+            font-family: "Aerial";
+            text-align: left;
+            padding: 10px;
+            border-width: 5px;
+            font-weight: Bold;
+            color: white;
+        }

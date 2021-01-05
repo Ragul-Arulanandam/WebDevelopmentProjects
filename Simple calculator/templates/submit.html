@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewreport" content="width=device-width initial-scale=1, shrink-to-fit=no">
+        <title>Calculator App</title>
+        <link rel="shortcut icon" type="images/png" href="static/calci.png">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./homepage.css">
+
+    </head>
+<body>
+       <style>
+               .navbar {
+            font-size: 25px;
+            font-family: "Courier New", Courier, monospace;
+            text-align: center;
+            position: relative;
+        }
+
+        .bg {
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px;
+            color: black;
+        }
+
+        #content {
+            font-family: "Aerial";
+            text-align: left;
+            padding: 10px;
+            border-width: 5px;
+            font-weight: Bold;
+            color: white;
+        }
+
+       </style>
+
+    <nav class="fixed-top">
+    <div class="navbar" style="background-color: skyblue">
+        <h1><b>Calculator WebApp</b></h1>
+    </div>
+    </nav>
+
+    <div class="bg">
+        <img src="static/bg.png" alt="Nature" class="responsive" style="width:100%">
+        <div class="container">
+            <h1>Results Announced</h1>
+            <div>
+            {{final1}}
+            </div>
+    </div>
+</body>
+</html>
