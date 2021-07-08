@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Single Page Test</title>
+<script>
+    function PageOne() {
+        document.getElementById("page-one").style.display = "block";
+        document.getElementById("page-two").style.display = "none";
+    }
+    function PageTwo() {
+        document.getElementById("page-one").style.display = "none";
+        document.getElementById("page-two").style.display = "block";
+    }
+</script>
+</head>
+<body>
+<div id="Common">
+    <p>This is a common section</p>
+</div>
+<div id="page-one">
+    <p>This is page one</p>
+    <button onclick="PageTwo()">Page Two</button>
+</div>
+<div id="page-two" style="display:none;" >
+    <p>This is page two</p>
+    <button onclick="PageOne()">Page One</button>
+</div>
+</body>
+</html>

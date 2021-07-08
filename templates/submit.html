@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}    
+    <style>
+    #data{
+     margin: auto;
+     width:400px;
+     background-image: url(static/assets/img.png);
+     background-size: 150px ;
+     background-position: right;
+     background-repeat: no-repeat;
+     font-family: "Times New Roman", Times, serif;
+     font-style: italic;
+     font-weight: Bold;
+     color: white;
+     background-color: rgba(0, 0, 0, 0.397);
+     padding: 50px;
+    }
+   
+    </style>
+    
+    <div id = 'data'>
+        {% for i in data %}
+        <p> {{i}} : {{data[i]}} </p>
+        {% endfor %}
+    </div>
+
+{% endblock content %}

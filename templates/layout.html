@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title>Weather search-{{ title }}</title>
+        {% else %}
+        <title>Weather seatch</title>
+        {% endif %}
+
+        <link rel="shortcut icon" href="./static/assets/imgg.png" type="image/x-icon" >
+    <style>
+    body{
+        background-image: url(/static/assets/bg2.jpg);
+        background-size:100%;
+        background-repeat: no-repeat;
+    }
+    </style>
+    </head>
+    <body>
+    <style>
+
+    h1 {
+     border: 1px skyblue;
+     padding: 30px;
+     text-align: center;
+     font-family: "Times New Roman";
+     background-color: rgba(185, 205, 212, 0);
+     /* background-image: url(static/assets/weather1.jpeg); */
+     background-size: 200px ;
+     background-repeat: no-repeat;
+     background-position: right;
+     animation-name: example;
+     animation-duration: 4s;
+     color: blanchedalmond;
+}
+
+    </style>
+        <h1>
+            WEATHER SEARCH WEBAPP
+        </h1>
+        <br/>
+        <div id= "main">
+            {% block content %} {% endblock %}
+        </div>
+    </body>
+</html>

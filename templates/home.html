@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+    <style>
+    div{
+        margin: auto;
+        border: 2px  black;
+        width: 400px;
+        /* font-color: white; */
+    }
+    #content{
+        font-family: "Verdana";
+        text-align: center;
+        font-weight: Bold;
+        color: white;
+            }
+    </style>
+    <div>
+        <form method="POST", action="">
+            {{ form.hidden_tag() }}
+            </fieldset>
+                <br/>
+                <div id="content">
+                    {{ form.countryname.label() }}
+                    {{ form.countryname() }}
+                </div>
+                <br/>
+                <div id="content">
+                    {{ form.submit() }}
+                </div>
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}

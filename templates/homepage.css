@@ -1,0 +1,30 @@
+.navbar-brand {
+    width: 180px;
+    height: 40px;
+    font-family: "Courier New", Courier, monospace;
+    background-repeat: no-repeat;
+    background-image: url(./images/brand.jpg);
+    margin: 5px;
+    box-sizing: inherit;
+    width: 180px;
+    background-size: 90% auto;
+}
+
+.bg {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.centered {
+    position: absolute;
+    color: red;
+    text-align: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
